@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Mark Louie Larin – Virtual Assistant | CRM & AI Automation Specialist</title>
+<meta name="description" content="Virtual Assistant specializing in CRM management, AI automation, and workflow optimization. I help businesses automate repetitive work with GoHighLevel, Make.com, Zapier, and AI tools."/>
+<meta name="keywords" content="virtual assistant, CRM specialist, AI automation, GoHighLevel, Make.com, Zapier, workflow automation, Philippines VA"/>
+<meta name="author" content="Mark Louie Larin"/>
+<meta property="og:title" content="Mark Louie Larin – Virtual Assistant | CRM & AI Automation"/>
+<meta property="og:description" content="I help businesses run smarter — automating workflows, managing CRM pipelines, and deploying AI tools."/>
+<meta property="og:type" content="website"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Mark Louie Larin – VA | CRM & AI Automation"/>
+<meta name="twitter:description" content="Virtual Assistant · CRM Specialist · AI Automation Expert"/>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23090d13'/%3E%3Ctext x='50' y='68' font-size='52' font-family='monospace' fill='%2300dcb4' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Sora:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #090d13;
+    --surface: #0f1520;
+    --surface2: #151d2e;
+    --border: rgba(0,220,180,0.15);
+    --accent: #00dcb4;
+    --accent2: #0fa3ff;
+    --text: #e8f0fe;
+    --muted: #7a8ba8;
+    --mono: 'Space Mono', monospace;
+    --sans: 'Sora', sans-serif;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    font-size: 15px;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  /* Grid bg */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(0,220,180,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,220,180,0.03) 1px, transparent 1px);
+    background-size: 48px 48px;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .wrap { position: relative; z-index: 1; max-width: 900px; margin: 0 auto; padding: 0 2rem; }
+
+  /* Scroll reveal */
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { opacity: 1; transform: none; transition: none; }
+    html { scroll-behavior: auto; }
+  }
+
+  /* NAV */
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(9,13,19,0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    padding: 1rem 0;
+  }
+  nav .inner {
+    max-width: 900px; margin: 0 auto; padding: 0 2rem;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  nav .logo {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--accent);
+    letter-spacing: 0.08em;
+  }
+  nav ul { list-style: none; display: flex; gap: 2rem; }
+  nav ul a {
+    font-size: 12px; font-family: var(--mono);
+    color: var(--muted); text-decoration: none;
+    letter-spacing: 0.06em;
+    transition: color 0.2s;
+  }
+  nav ul a:hover { color: var(--accent); }
+
+  /* Mobile menu */
+  .menu-btn {
+    display: none;
+    background: none; border: 1px solid var(--border);
+    border-radius: 6px; padding: 6px 10px;
+    color: var(--accent); font-family: var(--mono); font-size: 14px;
+    cursor: pointer;
+  }
+  .mobile-menu {
+    display: none;
+    border-top: 1px solid var(--border);
+    margin-top: 1rem; padding: 0.5rem 2rem 0;
+  }
+  .mobile-menu.open { display: block; }
+  .mobile-menu a {
+    display: block; padding: 10px 0;
+    font-family: var(--mono); font-size: 13px;
+    color: var(--muted); text-decoration: none;
+    letter-spacing: 0.06em;
+  }
+  .mobile-menu a:hover { color: var(--accent); }
+
+  /* HERO */
+  #hero {
+    min-height: 92vh;
+    display: flex; align-items: center;
+    padding: 6rem 0 4rem;
+  }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(0,220,180,0.08);
+    border: 1px solid rgba(0,220,180,0.25);
+    border-radius: 100px;
+    padding: 6px 16px;
+    font-family: var(--mono); font-size: 11px;
+    color: var(--accent); letter-spacing: 0.1em;
+    margin-bottom: 2rem;
+  }
+  .hero-badge span.dot {
+    width: 7px; height: 7px; border-radius: 50%;
+    background: var(--accent);
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.4; transform: scale(0.8); }
+  }
+  h1.name {
+    font-size: clamp(2.4rem, 6vw, 4.2rem);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.5rem;
+  }
+  h1.name .first { color: var(--text); }
+  h1.name .last {
+    display: block;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .hero-sub {
+    font-family: var(--mono); font-size: 13px;
+    color: var(--accent2); letter-spacing: 0.06em;
+    margin-bottom: 1.5rem;
+    min-height: 1.5em;
+  }
+  .hero-sub .cursor {
+    display: inline-block; width: 8px;
+    background: var(--accent2);
+    animation: blink 1s step-end infinite;
+  }
+  @keyframes blink { 50% { opacity: 0; } }
+  .hero-desc {
+    max-width: 520px; color: var(--muted);
+    font-size: 15px; margin-bottom: 2.5rem;
+  }
+  .cta-row { display: flex; gap: 1rem; flex-wrap: wrap; }
+  .btn {
+    font-family: var(--mono); font-size: 12px;
+    letter-spacing: 0.08em; padding: 12px 28px;
+    border-radius: 6px; cursor: pointer;
+    text-decoration: none; display: inline-block;
+    transition: all 0.2s;
+  }
+  .btn-primary {
+    background: var(--accent); color: #090d13;
+    border: none; font-weight: 700;
+  }
+  .btn-primary:hover { background: #00f5c8; transform: translateY(-2px); }
+  .btn-ghost {
+    background: transparent; color: var(--accent);
+    border: 1px solid rgba(0,220,180,0.4);
+  }
+  .btn-ghost:hover { background: rgba(0,220,180,0.08); transform: translateY(-2px); }
+
+  /* STATS */
+  .stats-row {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 1rem; margin-top: 4rem; padding-top: 3rem;
+    border-top: 1px solid var(--border);
+  }
+  .stat { text-align: center; }
+  .stat .num {
+    font-family: var(--mono); font-size: 2rem; font-weight: 700;
+    color: var(--accent);
+  }
+  .stat .label { font-size: 12px; color: var(--muted); margin-top: 4px; }
+
+  /* SECTION COMMON */
+  section { padding: 5rem 0; }
+  .section-tag {
+    font-family: var(--mono); font-size: 11px;
+    color: var(--accent); letter-spacing: 0.12em;
+    text-transform: uppercase; margin-bottom: 0.5rem;
+  }
+  h2.section-title {
+    font-size: 1.9rem; font-weight: 700;
+    letter-spacing: -0.02em; margin-bottom: 1rem;
+  }
+  .section-divider {
+    width: 40px; height: 2px;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    margin-bottom: 3rem; border-radius: 2px;
+  }
+
+  /* ABOUT */
+  #about .about-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;
+  }
+  .about-header {
+    display: flex; align-items: center; gap: 1.25rem; margin-bottom: 1.5rem;
+  }
+  .avatar {
+    width: 84px; height: 84px; border-radius: 50%;
+    padding: 3px; flex-shrink: 0;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+  }
+  .avatar .avatar-inner {
+    width: 100%; height: 100%; border-radius: 50%;
+    background: var(--surface2);
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--mono); font-size: 26px; font-weight: 700;
+    color: var(--accent); overflow: hidden;
+    position: relative;
+  }
+  .avatar img {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%;
+    object-fit: cover; object-position: center 20%;
+    border-radius: 50%;
+  }
+  .about-header .ah-name { font-size: 16px; font-weight: 600; }
+  .about-header .ah-title { font-family: var(--mono); font-size: 11px; color: var(--accent2); }
+  .video-card {
+    display: flex; gap: 12px; align-items: center;
+    background: rgba(15,163,255,0.06);
+    border: 1px dashed rgba(15,163,255,0.35);
+    border-radius: 8px; padding: 14px 16px;
+    font-size: 13px; color: var(--muted);
+    text-decoration: none; transition: border-color 0.2s;
+  }
+  .video-card:hover { border-color: var(--accent2); }
+  .video-card .play {
+    width: 34px; height: 34px; border-radius: 50%; flex-shrink: 0;
+    background: rgba(15,163,255,0.15); color: var(--accent2);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 13px;
+  }
+
+  /* CASE STUDIES */
+  .case-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+  }
+  .case-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px; padding: 1.75rem;
+    display: flex; flex-direction: column;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+  .case-card:hover { border-color: rgba(0,220,180,0.4); transform: translateY(-3px); }
+  .case-tag {
+    font-family: var(--mono); font-size: 10px;
+    color: var(--accent2); letter-spacing: 0.08em;
+    text-transform: uppercase; margin-bottom: 0.75rem;
+  }
+  .case-card h3 { font-size: 14px; font-weight: 600; margin-bottom: 0.5rem; }
+  .case-card p { font-size: 13px; color: var(--muted); flex: 1; }
+  .case-metric {
+    margin-top: 1.25rem; padding-top: 1rem;
+    border-top: 1px solid var(--border);
+  }
+  .case-metric .cm-num {
+    font-family: var(--mono); font-size: 1.5rem; font-weight: 700;
+    color: var(--accent);
+  }
+  .case-metric .cm-label { font-size: 11px; color: var(--muted); }
+
+  /* CHATBOT DEMO */
+  .chat-shell {
+    max-width: 560px; margin: 0 auto;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px; overflow: hidden;
+  }
+  .chat-head {
+    display: flex; align-items: center; gap: 10px;
+    padding: 14px 18px;
+    background: var(--surface2);
+    border-bottom: 1px solid var(--border);
+  }
+  .chat-head .bot-dot {
+    width: 9px; height: 9px; border-radius: 50%;
+    background: var(--accent); animation: pulse 2s infinite;
+  }
+  .chat-head .bot-name { font-family: var(--mono); font-size: 12px; color: var(--text); }
+  .chat-head .bot-status { font-size: 11px; color: var(--muted); margin-left: auto; }
+  .chat-log {
+    height: 320px; overflow-y: auto;
+    padding: 1.25rem; display: flex; flex-direction: column; gap: 10px;
+  }
+  .msg {
+    max-width: 80%; padding: 10px 14px;
+    border-radius: 12px; font-size: 13px; line-height: 1.5;
+  }
+  .msg.bot {
+    background: var(--surface2); color: var(--text);
+    border: 1px solid var(--border);
+    border-bottom-left-radius: 4px; align-self: flex-start;
+  }
+  .msg.user {
+    background: rgba(0,220,180,0.12); color: var(--text);
+    border: 1px solid rgba(0,220,180,0.25);
+    border-bottom-right-radius: 4px; align-self: flex-end;
+  }
+  .msg.typing { color: var(--muted); font-family: var(--mono); font-size: 12px; }
+  .chat-chips {
+    display: flex; flex-wrap: wrap; gap: 8px;
+    padding: 0 1.25rem 1rem;
+  }
+  .chip-btn {
+    font-family: var(--mono); font-size: 11px;
+    padding: 6px 14px; border-radius: 100px;
+    background: transparent; color: var(--accent);
+    border: 1px solid rgba(0,220,180,0.35);
+    cursor: pointer; transition: background 0.2s;
+  }
+  .chip-btn:hover { background: rgba(0,220,180,0.1); }
+  .chat-input-row {
+    display: flex; gap: 8px;
+    padding: 12px 1.25rem;
+    border-top: 1px solid var(--border);
+  }
+  .chat-input-row input {
+    flex: 1; background: var(--surface2);
+    border: 1px solid var(--border); border-radius: 8px;
+    padding: 10px 14px; font-size: 13px;
+    color: var(--text); font-family: var(--sans);
+    outline: none;
+  }
+  .chat-input-row input:focus { border-color: rgba(0,220,180,0.4); }
+  .chat-input-row button {
+    background: var(--accent); color: #090d13;
+    border: none; border-radius: 8px;
+    padding: 10px 18px; font-family: var(--mono);
+    font-size: 12px; font-weight: 700; cursor: pointer;
+  }
+  .demo-note {
+    text-align: center; margin-top: 1rem;
+    font-family: var(--mono); font-size: 11px; color: var(--muted);
+  }
+  #about p { color: var(--muted); font-size: 14px; margin-bottom: 1rem; }
+  #about p strong { color: var(--text); font-weight: 600; }
+  .about-highlights { display: flex; flex-direction: column; gap: 0.75rem; }
+  .highlight {
+    display: flex; gap: 12px; align-items: flex-start;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px; padding: 14px 16px;
+    font-size: 13px; color: var(--muted);
+  }
+  .highlight .check {
+    color: var(--accent); font-family: var(--mono);
+    font-weight: 700; flex-shrink: 0;
+  }
+
+  /* SKILLS */
+  .skills-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+  }
+  .skill-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px; padding: 1.5rem;
+    transition: border-color 0.2s, transform 0.2s;
+    cursor: default;
+  }
+  .skill-card:hover {
+    border-color: rgba(0,220,180,0.4);
+    transform: translateY(-3px);
+  }
+  .skill-icon {
+    width: 40px; height: 40px; border-radius: 8px;
+    background: rgba(0,220,180,0.1);
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 1rem;
+  }
+  .skill-icon svg { width: 20px; height: 20px; }
+  .skill-card h3 {
+    font-size: 14px; font-weight: 600;
+    color: var(--text); margin-bottom: 0.4rem;
+  }
+  .skill-card p { font-size: 13px; color: var(--muted); }
+  .skill-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 0.8rem; }
+  .tag {
+    font-family: var(--mono); font-size: 10px;
+    padding: 3px 10px; border-radius: 100px;
+    background: rgba(15,163,255,0.1);
+    color: var(--accent2);
+    border: 1px solid rgba(15,163,255,0.2);
+  }
+
+  /* TOOLS */
+  .tools-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 0.75rem;
+  }
+  .tool-chip {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px; padding: 14px 16px;
+    text-align: center; font-size: 12px;
+    font-family: var(--mono); color: var(--muted);
+    transition: all 0.2s;
+  }
+  .tool-chip:hover { border-color: var(--accent); color: var(--accent); }
+  .tool-chip .tool-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--accent2);
+    margin: 0 auto 8px;
+  }
+  .tool-chip .tool-icon {
+    width: 22px; height: 22px;
+    display: block; margin: 0 auto 8px;
+    opacity: 0.85; transition: opacity 0.2s, transform 0.2s;
+  }
+  .tool-chip:hover .tool-icon { opacity: 1; transform: scale(1.1); }
+  /* Tooltip on hover */
+  .tool-chip { position: relative; cursor: default; }
+  .tool-chip::after {
+    content: attr(data-tip);
+    position: absolute;
+    bottom: calc(100% + 8px); left: 50%;
+    transform: translateX(-50%) translateY(4px);
+    background: var(--surface2);
+    color: var(--text);
+    border: 1px solid rgba(0,220,180,0.35);
+    border-radius: 6px;
+    padding: 7px 12px;
+    font-family: var(--sans);
+    font-size: 11px; line-height: 1.4;
+    width: max-content; max-width: 180px;
+    text-align: center; white-space: normal;
+    opacity: 0; pointer-events: none;
+    transition: opacity 0.2s, transform 0.2s;
+    z-index: 50;
+  }
+  .tool-chip::before {
+    content: '';
+    position: absolute;
+    bottom: calc(100% + 2px); left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-top-color: rgba(0,220,180,0.35);
+    opacity: 0; pointer-events: none;
+    transition: opacity 0.2s;
+    z-index: 50;
+  }
+  .tool-chip:hover::after { opacity: 1; transform: translateX(-50%) translateY(0); }
+  .tool-chip:hover::before { opacity: 1; }
+
+  /* SERVICES */
+  .services-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+  }
+  .service-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px; padding: 2rem;
+    position: relative; overflow: hidden;
+    transition: border-color 0.2s;
+  }
+  .service-card::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    opacity: 0; transition: opacity 0.2s;
+  }
+  .service-card:hover { border-color: rgba(0,220,180,0.3); }
+  .service-card:hover::before { opacity: 1; }
+  .service-num {
+    font-family: var(--mono); font-size: 11px;
+    color: var(--accent); margin-bottom: 1rem;
+    letter-spacing: 0.1em;
+  }
+  .service-card h3 { font-size: 15px; font-weight: 600; margin-bottom: 0.5rem; }
+  .service-card p { font-size: 13px; color: var(--muted); }
+
+  /* WORKFLOW */
+  .workflow { display: flex; flex-direction: column; gap: 0; }
+  .wf-step {
+    display: flex; gap: 1.5rem; align-items: flex-start;
+    padding: 1.5rem 0; position: relative;
+  }
+  .wf-step + .wf-step { border-top: 1px solid var(--border); }
+  .wf-num {
+    font-family: var(--mono); font-size: 11px;
+    color: var(--accent); min-width: 28px;
+    padding-top: 3px;
+  }
+  .wf-content h3 { font-size: 14px; font-weight: 600; margin-bottom: 4px; }
+  .wf-content p { font-size: 13px; color: var(--muted); }
+
+  /* FAQ */
+  .faq-item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 0.75rem;
+    overflow: hidden;
+  }
+  .faq-item summary {
+    padding: 1.1rem 1.5rem;
+    font-size: 14px; font-weight: 600;
+    cursor: pointer; list-style: none;
+    display: flex; justify-content: space-between; align-items: center;
+    transition: color 0.2s;
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::after {
+    content: '+';
+    font-family: var(--mono); color: var(--accent);
+    font-size: 18px; transition: transform 0.2s;
+  }
+  .faq-item[open] summary::after { transform: rotate(45deg); }
+  .faq-item summary:hover { color: var(--accent); }
+  .faq-item .faq-body {
+    padding: 0 1.5rem 1.2rem;
+    font-size: 13px; color: var(--muted);
+  }
+
+  /* CTA */
+  #cta {
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    text-align: center; padding: 5rem 0;
+  }
+  #cta h2 { font-size: 2rem; margin-bottom: 1rem; }
+  #cta p { color: var(--muted); max-width: 440px; margin: 0 auto 2rem; }
+  .email-line {
+    margin-top: 1.5rem; font-family: var(--mono); font-size: 12px;
+    color: var(--muted);
+  }
+  .email-line button {
+    background: none; border: none; cursor: pointer;
+    color: var(--accent2); font-family: var(--mono); font-size: 12px;
+    text-decoration: underline; margin-left: 8px;
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 2rem 0; text-align: center;
+    font-family: var(--mono); font-size: 11px;
+    color: var(--muted); border-top: 1px solid var(--border);
+  }
+  footer a { color: var(--accent); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+
+  /* BACK TO TOP */
+  #topBtn {
+    position: fixed; bottom: 24px; right: 24px; z-index: 200;
+    width: 42px; height: 42px; border-radius: 8px;
+    background: var(--surface2); color: var(--accent);
+    border: 1px solid var(--border);
+    font-size: 18px; cursor: pointer;
+    opacity: 0; pointer-events: none;
+    transition: opacity 0.3s, transform 0.2s;
+  }
+  #topBtn.show { opacity: 1; pointer-events: auto; }
+  #topBtn:hover { transform: translateY(-3px); border-color: var(--accent); }
+
+  @media (max-width: 600px) {
+    .stats-row { grid-template-columns: 1fr; gap: 1.5rem; }
+    nav ul { display: none; }
+    .menu-btn { display: block; }
+    #about .about-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="inner">
+    <div class="logo">MLL.VA</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#results">Results</a></li>
+      <li><a href="#demo">Demo</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#cta">Contact</a></li>
+    </ul>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">☰</button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#results">Results</a>
+    <a href="#demo">Demo</a>
+    <a href="#services">Services</a>
+    <a href="#faq">FAQ</a>
+    <a href="#cta">Contact</a>
+  </div>
+</nav>
+
+<section id="hero">
+  <div class="wrap">
+    <div class="hero-badge"><span class="dot"></span> Available for new clients</div>
+    <h1 class="name">
+      <span class="first">Mark Louie</span>
+      <span class="last">Larin</span>
+    </h1>
+    <p class="hero-sub">// <span id="typed"></span><span class="cursor">&nbsp;</span></p>
+    <p class="hero-desc"><strong style="color:var(--text)">I build automations that save your team 5+ hours every week.</strong> CRM pipelines that follow up with leads in seconds, AI chatbots that answer customers at 2 AM, and workflows that run without you touching them.</p>
+    <div class="cta-row">
+      <a href="#cta" class="btn btn-primary">Work with me</a>
+      <a href="#services" class="btn btn-ghost">View services</a>
+    </div>
+    <div class="stats-row">
+      <div class="stat"><div class="num" data-count="50" data-suffix="+">0</div><div class="label">Workflows automated</div></div>
+      <div class="stat"><div class="num" data-count="3" data-suffix="+">0</div><div class="label">Years of experience</div></div>
+      <div class="stat"><div class="num" data-count="100" data-suffix="%">0</div><div class="label">Remote-ready</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap reveal">
+    <div class="section-tag">// Who I am</div>
+    <h2 class="section-title">About me</h2>
+    <div class="section-divider"></div>
+    <div class="about-grid">
+      <div>
+        <div class="about-header">
+          <!-- Photo embedded as base64 — single file, nothing extra to upload -->
+          <div class="avatar"><div class="avatar-inner">ML<img src="data:image/jpeg;base64,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" alt="Mark Louie Larin" onerror="this.remove()"/></div></div>
+          <div>
+            <div class="ah-name">Mark Louie Larin</div>
+            <div class="ah-title">VA · CRM · AI Automation</div>
+          </div>
+        </div>
+        <p>I'm a <strong>Virtual Assistant based in the Philippines</strong> specializing in the systems side of business — CRMs, automations, and AI tools. My focus is simple: take the repetitive work off your plate and make sure nothing falls through the cracks.</p>
+        <p>Whether it's a messy pipeline that needs restructuring, a follow-up sequence that should run itself, or a chatbot that answers your customers at 2 AM — <strong>I build it, document it, and hand it over working.</strong></p>
+      </div>
+      <div class="about-highlights">
+        <div class="highlight"><span class="check">✓</span> Systems-first mindset — I automate before I do it manually</div>
+        <div class="highlight"><span class="check">✓</span> Clear communication and async-friendly updates</div>
+        <div class="highlight"><span class="check">✓</span> Every build documented with SOPs and Loom walkthroughs</div>
+        <div class="highlight"><span class="check">✓</span> Flexible with US, AU, and EU time zones</div>
+        <!-- EDIT ME: set href to your Loom/YouTube intro link and change the text to "Watch my 60-second intro" -->
+        <a class="video-card" href="#cta" title="Video intro coming soon">
+          <span class="play">▶</span>
+          <span><strong style="color:var(--text)">Video intro — coming soon</strong><br/>Meanwhile, say hello and I'll reply within 24 hours</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap reveal">
+    <div class="section-tag">// What I do</div>
+    <h2 class="section-title">Core skills</h2>
+    <div class="section-divider"></div>
+    <div class="skills-grid">
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#00dcb4" stroke-width="2" stroke-linecap="round">
+            <path d="M3 3h18v4H3zM3 10h18v4H3zM3 17h18v4H3z"/>
+          </svg>
+        </div>
+        <h3>CRM Management</h3>
+        <p>Setting up, cleaning, and maintaining CRM systems to keep your pipeline organized and your leads moving forward.</p>
+        <div class="skill-tags">
+          <span class="tag">GoHighLevel</span>
+          <span class="tag">HubSpot</span>
+          <span class="tag">Zoho</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#00dcb4" stroke-width="2" stroke-linecap="round">
+            <circle cx="12" cy="12" r="3"/>
+            <path d="M12 2v3M12 19v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M2 12h3M19 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12"/>
+          </svg>
+        </div>
+        <h3>AI Automation</h3>
+        <p>Building intelligent automation flows that handle lead follow-up, task routing, email sequences, and reporting — 24/7.</p>
+        <div class="skill-tags">
+          <span class="tag">Make.com</span>
+          <span class="tag">Zapier</span>
+          <span class="tag">n8n</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#00dcb4" stroke-width="2" stroke-linecap="round">
+            <rect x="2" y="4" width="20" height="16" rx="2"/>
+            <path d="M8 12h8M8 8h5"/>
+          </svg>
+        </div>
+        <h3>Admin & Operations</h3>
+        <p>Email management, calendar coordination, data entry, reporting, and day-to-day executive support — done precisely.</p>
+        <div class="skill-tags">
+          <span class="tag">Notion</span>
+          <span class="tag">Asana</span>
+          <span class="tag">Google Workspace</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#00dcb4" stroke-width="2" stroke-linecap="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+          </svg>
+        </div>
+        <h3>AI Chatbot Setup</h3>
+        <p>Designing and deploying AI chat assistants for customer support, lead capture, and FAQ automation on your platforms.</p>
+        <div class="skill-tags">
+          <span class="tag">Claude API</span>
+          <span class="tag">ChatGPT</span>
+          <span class="tag">Voiceflow</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#00dcb4" stroke-width="2" stroke-linecap="round">
+            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+          </svg>
+        </div>
+        <h3>Workflow Optimization</h3>
+        <p>Auditing existing processes to eliminate bottlenecks, reduce manual work, and build scalable SOPs for your team.</p>
+        <div class="skill-tags">
+          <span class="tag">SOPs</span>
+          <span class="tag">Loom</span>
+          <span class="tag">ClickUp</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#00dcb4" stroke-width="2" stroke-linecap="round">
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+          </svg>
+        </div>
+        <h3>Data & Reporting</h3>
+        <p>Building dashboards and automated reports so you always have clear visibility on what's working — and what's not.</p>
+        <div class="skill-tags">
+          <span class="tag">Google Sheets</span>
+          <span class="tag">Airtable</span>
+          <span class="tag">Looker Studio</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EDIT ME: Replace these 3 case studies with your real projects. Keep the format: context → what you built → measurable result. -->
+<section id="results">
+  <div class="wrap reveal">
+    <div class="section-tag">// Proof</div>
+    <h2 class="section-title">Recent results</h2>
+    <div class="section-divider"></div>
+    <div class="case-grid">
+
+      <div class="case-card">
+        <div class="case-tag">CRM Automation · Real Estate</div>
+        <h3>Lead follow-up on autopilot</h3>
+        <p>A US real estate team was losing leads that sat untouched for hours. I rebuilt their GoHighLevel pipeline with instant SMS + email follow-up sequences and automated lead routing.</p>
+        <div class="case-metric">
+          <div class="cm-num">90 sec</div>
+          <div class="cm-label">avg. lead response time — down from 4+ hours</div>
+        </div>
+      </div>
+
+      <div class="case-card">
+        <div class="case-tag">AI Chatbot · Coaching</div>
+        <h3>Support that never sleeps</h3>
+        <p>An online coaching business drowned in repeat questions. I deployed an AI chatbot trained on their FAQs and programs, integrated with their CRM for lead capture.</p>
+        <div class="case-metric">
+          <div class="cm-num">70%</div>
+          <div class="cm-label">of inquiries handled without human touch</div>
+        </div>
+      </div>
+
+      <div class="case-card">
+        <div class="case-tag">Workflow · E-commerce</div>
+        <h3>Reporting without spreadsheet hell</h3>
+        <p>Weekly reports took a store owner half a day of copy-pasting. I connected their sales channels to an automated Looker Studio dashboard via Make.com.</p>
+        <div class="case-metric">
+          <div class="cm-num">5 hrs</div>
+          <div class="cm-label">saved every week — reports now build themselves</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="demo">
+  <div class="wrap reveal">
+    <div class="section-tag">// See it live</div>
+    <h2 class="section-title">Try the bot I'd build for you</h2>
+    <div class="section-divider"></div>
+    <div class="chat-shell">
+      <div class="chat-head">
+        <span class="bot-dot"></span>
+        <span class="bot-name">MLL Assistant</span>
+        <span class="bot-status">online 24/7</span>
+      </div>
+      <div class="chat-log" id="chatLog"></div>
+      <div class="chat-chips" id="chatChips">
+        <button class="chip-btn" data-q="What services do you offer?">Services</button>
+        <button class="chip-btn" data-q="How much do you charge?">Pricing</button>
+        <button class="chip-btn" data-q="What tools do you use?">Tools</button>
+        <button class="chip-btn" data-q="How do we get started?">Get started</button>
+      </div>
+      <div class="chat-input-row">
+        <input type="text" id="chatInput" placeholder="Ask me anything…" aria-label="Chat message"/>
+        <button id="chatSend">Send</button>
+      </div>
+    </div>
+    <p class="demo-note">↑ This is a working demo — imagine it trained on YOUR business, capturing leads while you sleep.</p>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap reveal">
+    <div class="section-tag">// Packages</div>
+    <h2 class="section-title">Services offered</h2>
+    <div class="section-divider"></div>
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-num">01 //</div>
+        <h3>CRM Setup & Optimization</h3>
+        <p>Full CRM build-out or audit — pipelines, automations, lead scoring, integrations, and team training included.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-num">02 //</div>
+        <h3>AI Automation Builds</h3>
+        <p>Custom automation flows using Make, Zapier, or n8n. From lead nurturing to invoice generation — fully hands-free.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-num">03 //</div>
+        <h3>Virtual Executive Assistance</h3>
+        <p>Inbox zero, calendar management, research, travel booking, and everything in between — your right-hand remotely.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-num">04 //</div>
+        <h3>AI Chatbot Deployment</h3>
+        <p>End-to-end chatbot setup for your website or CRM — trained on your FAQs, integrated with your tools, live 24/7.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="tools">
+  <div class="wrap reveal">
+    <div class="section-tag">// Tech stack</div>
+    <h2 class="section-title">Tools I work with</h2>
+    <div class="section-divider"></div>
+    <div class="tools-grid">
+      <div class="tool-chip" data-tip="All-in-one CRM, funnels & marketing automation"><svg class="tool-icon" viewBox="0 0 24 24" fill="none" stroke="#00dcb4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg>GoHighLevel</div>
+      <div class="tool-chip" data-tip="CRM platform for sales, marketing & support"><img class="tool-icon" src="https://cdn.simpleicons.org/hubspot/00dcb4" alt="" loading="lazy" onerror="this.outerHTML='<div class=&quot;tool-dot&quot;></div>'"/>HubSpot</div>
+      <div class="tool-chip" data-tip="Visual builder for complex workflow automations"><img class="tool-icon" src="https://cdn.simpleicons.org/make/00dcb4" alt="" loading="lazy" onerror="this.outerHTML='<div class=&quot;tool-dot&quot;></div>'"/>Make.com</div>
+      <div class="tool-chip" data-tip="Connects your apps to automate repetitive tasks"><img class="tool-icon" src="https://cdn.simpleicons.org/zapier/00dcb4" alt="" loading="lazy" onerror="this.outerHTML='<div class=&quot;tool-dot&quot;></div>'"/>Zapier</div>
+      <div class="tool-chip" data-tip="Open-source workflow automation, fully customizable"><img class="tool-icon" src="https://cdn.simpleicons.org/n8n/00dcb4" alt="" loading="lazy" onerror="this.outerHTML='<div class=&quot;tool-dot&quot;></div>'"/>n8n</div>
+      <div class="tool-chip" data-tip="Docs, wikis, SOPs & project management"><img class="tool-icon" src="https://cdn.simpleicons.org/notion/00dcb4" alt="" loading="lazy" onerror="this.outerHTML='<div class=&quot;tool-dot&quot;></div>'"/>Notion</div>
+      <div class="tool-chip" data-tip="Spreadsheet-database hybrid for organized data"><img class="tool-icon" src="https://cdn.simpleicons.org/airtable/00dcb4" alt="" loading="lazy" onerror="this.outerHTML='<div class=&quot;tool-dot&quot;></div>'"/>Airtable</div>
+      <div class="tool-chip" data-tip="Task & project management for teams"><img class="tool-icon" src="https://cdn.simpleicons.org/clickup/00dcb4" alt="" loading="lazy" onerror="this.outerHTML='<div class=&quot;tool-dot&quot;></div>'"/>ClickUp</div>
+      <div class="tool-chip" data-tip="Team communication, alerts & bot integrations"><svg class="tool-icon" viewBox="0 0 24 24" fill="#00dcb4"><path d="M5.042 15.165a2.528 2.528 0 0 1-2.52 2.523A2.528 2.528 0 0 1 0 15.165a2.527 2.527 0 0 1 2.522-2.52h2.52v2.52zM6.313 15.165a2.527 2.527 0 0 1 2.521-2.52 2.527 2.527 0 0 1 2.521 2.52v6.313A2.528 2.528 0 0 1 8.834 24a2.528 2.528 0 0 1-2.521-2.522v-6.313zM8.834 5.042a2.528 2.528 0 0 1-2.521-2.52A2.528 2.528 0 0 1 8.834 0a2.528 2.528 0 0 1 2.521 2.522v2.52H8.834zM8.834 6.313a2.528 2.528 0 0 1 2.521 2.521 2.528 2.528 0 0 1-2.521 2.521H2.522A2.528 2.528 0 0 1 0 8.834a2.528 2.528 0 0 1 2.522-2.521h6.312zM18.956 8.834a2.528 2.528 0 0 1 2.522-2.521A2.528 2.528 0 0 1 24 8.834a2.528 2.528 0 0 1-2.522 2.521h-2.522V8.834zM17.688 8.834a2.528 2.528 0 0 1-2.523 2.521 2.527 2.527 0 0 1-2.52-2.521V2.522A2.527 2.527 0 0 1 15.165 0a2.528 2.528 0 0 1 2.523 2.522v6.312zM15.165 18.956a2.528 2.528 0 0 1 2.523 2.522A2.528 2.528 0 0 1 15.165 24a2.527 2.527 0 0 1-2.52-2.522v-2.522h2.52zM15.165 17.688a2.527 2.527 0 0 1-2.52-2.523 2.526 2.526 0 0 1 2.52-2.52h6.313A2.527 2.527 0 0 1 24 15.165a2.528 2.528 0 0 1-2.522 2.523h-6.313z"/></svg>Slack</div>
+      <div class="tool-chip" data-tip="Design & deploy AI chatbots visually"><svg class="tool-icon" viewBox="0 0 24 24" fill="none" stroke="#00dcb4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/><path d="M9 8.5l3 5 3-5"/></svg>Voiceflow</div>
+      <div class="tool-chip" data-tip="AI engine for custom chatbots & smart automations"><img class="tool-icon" src="https://cdn.simpleicons.org/claude/00dcb4" alt="" loading="lazy" onerror="this.outerHTML='<div class=&quot;tool-dot&quot;></div>'"/>Claude API</div>
+      <div class="tool-chip" data-tip="AI for drafting, research & customer support"><svg class="tool-icon" viewBox="0 0 24 24" fill="#00dcb4"><path d="M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.073zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944zm-9.6607-4.1254a4.4708 4.4708 0 0 1-.5346-3.0137l.142.0852 4.783 2.7582a.7712.7712 0 0 0 .7806 0l5.8428-3.3685v2.3324a.0804.0804 0 0 1-.0332.0615L9.74 19.9502a4.4992 4.4992 0 0 1-6.1408-1.6464zM2.3408 7.8956a4.485 4.485 0 0 1 2.3655-1.9728V11.6a.7664.7664 0 0 0 .3879.6765l5.8144 3.3543-2.0201 1.1685a.0757.0757 0 0 1-.071 0l-4.8303-2.7865A4.504 4.504 0 0 1 2.3408 7.8956zm16.5963 3.8558L13.1038 8.364 15.1192 7.2a.0757.0757 0 0 1 .071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-.6765 8.1042v-5.6772a.79.79 0 0 0-.407-.667zm2.0107-3.0231l-.142-.0852-4.7735-2.7818a.7759.7759 0 0 0-.7854 0L9.409 9.2297V6.8974a.0662.0662 0 0 1 .0284-.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66zM8.3065 12.863l-2.02-1.1638a.0804.0804 0 0 1-.038-.0567V6.0742a4.4992 4.4992 0 0 1 7.3757-3.4537l-.142.0805L8.704 5.459a.7948.7948 0 0 0-.3927.6813zm1.0976-2.3654l2.602-1.4998 2.6069 1.4998v2.9994l-2.5974 1.4997-2.6067-1.4997z"/></svg>ChatGPT</div>
+      <div class="tool-chip" data-tip="Gmail, Sheets, Docs & Drive — the daily backbone"><img class="tool-icon" src="https://cdn.simpleicons.org/google/00dcb4" alt="" loading="lazy" onerror="this.outerHTML='<div class=&quot;tool-dot&quot;></div>'"/>Google Suite</div>
+      <div class="tool-chip" data-tip="Automated dashboards & live business reports"><img class="tool-icon" src="https://cdn.simpleicons.org/looker/00dcb4" alt="" loading="lazy" onerror="this.outerHTML='<div class=&quot;tool-dot&quot;></div>'"/>Looker Studio</div>
+    </div>
+  </div>
+</section>
+
+<section id="process">
+  <div class="wrap reveal">
+    <div class="section-tag">// How it works</div>
+    <h2 class="section-title">My process</h2>
+    <div class="section-divider"></div>
+    <div class="workflow">
+      <div class="wf-step">
+        <div class="wf-num">01 //</div>
+        <div class="wf-content">
+          <h3>Discovery call</h3>
+          <p>We map your current workflows, identify pain points, and define what success looks like for your business.</p>
+        </div>
+      </div>
+      <div class="wf-step">
+        <div class="wf-num">02 //</div>
+        <div class="wf-content">
+          <h3>Audit & strategy</h3>
+          <p>I audit your existing tools and processes, then deliver a clear action plan with automation opportunities prioritized.</p>
+        </div>
+      </div>
+      <div class="wf-step">
+        <div class="wf-num">03 //</div>
+        <div class="wf-content">
+          <h3>Build & deploy</h3>
+          <p>I set up and test every workflow, CRM configuration, or AI tool — fully documented and handed over cleanly.</p>
+        </div>
+      </div>
+      <div class="wf-step">
+        <div class="wf-num">04 //</div>
+        <div class="wf-content">
+          <h3>Ongoing support</h3>
+          <p>Optional retainer for continued management, updates, and new automations as your business grows.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap reveal">
+    <div class="section-tag">// Questions</div>
+    <h2 class="section-title">FAQ</h2>
+    <div class="section-divider"></div>
+
+    <details class="faq-item">
+      <summary>What time zones do you work in?</summary>
+      <div class="faq-body">I'm based in the Philippines (GMT+8) and work flexibly with US, AU, and EU clients. For async work, time zones rarely matter — I keep you updated with clear written summaries and Loom videos.</div>
+    </details>
+
+    <details class="faq-item">
+      <summary>Do you charge hourly or per project?</summary>
+      <div class="faq-body">Both. One-time builds (CRM setup, automation flows, chatbots) are quoted per project. Ongoing support and executive assistance work on a monthly retainer. We'll agree on scope and pricing before anything starts.</div>
+    </details>
+
+    <details class="faq-item">
+      <summary>What if I don't know what to automate?</summary>
+      <div class="faq-body">That's exactly what the discovery call and audit are for. Tell me how your day-to-day runs, and I'll identify where automation saves the most time — prioritized by impact.</div>
+    </details>
+
+    <details class="faq-item">
+      <summary>Will I be able to manage the systems myself afterward?</summary>
+      <div class="faq-body">Yes. Every build comes with documentation and video walkthroughs so you or your team can operate it without me. Retainer support is optional, never required.</div>
+    </details>
+
+    <details class="faq-item">
+      <summary>How do we get started?</summary>
+      <div class="faq-body">Send me a message with a quick description of your business and what's eating your time. I'll reply within 24 hours to book a free discovery call.</div>
+    </details>
+  </div>
+</section>
+
+<section id="cta">
+  <div class="wrap reveal">
+    <div class="section-tag">// Let's build</div>
+    <h2>Ready to automate?</h2>
+    <p>Let's talk about how I can save your team hours every week and get your systems working for you.</p>
+    <div class="cta-row" style="justify-content:center;">
+      <!-- EDIT ME: replace the mailto below with your Calendly/Cal.com link when ready, e.g. https://calendly.com/marklouielarin/discovery -->
+      <a href="mailto:marklouielarin@gmail.com?subject=Discovery%20call%20request&body=Hi%20Mark%2C%20I%27d%20like%20to%20book%20a%20free%20discovery%20call.%20Here%27s%20a%20bit%20about%20my%20business%3A%20" class="btn btn-primary">Book a free discovery call</a>
+      <a href="mailto:marklouielarin@gmail.com?subject=VA%20Inquiry" class="btn btn-ghost">Or send an email</a>
+    </div>
+    <div class="email-line">
+      marklouielarin@gmail.com
+      <button id="copyEmail" aria-label="Copy email address">copy</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    © 2026 Mark Louie Larin · Virtual Assistant · CRM & AI Automation Specialist · Philippines<br/>
+    <a href="mailto:marklouielarin@gmail.com">marklouielarin@gmail.com</a>
+  </div>
+</footer>
+
+<button id="topBtn" aria-label="Back to top">↑</button>
+
+<script>
+  // Mobile menu
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  menuBtn.addEventListener('click', () => {
+    const open = mobileMenu.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', open);
+  });
+  mobileMenu.querySelectorAll('a').forEach(a =>
+    a.addEventListener('click', () => mobileMenu.classList.remove('open'))
+  );
+
+  // Typing effect
+  const roles = ['Virtual Assistant', 'CRM Specialist', 'AI Automation Expert'];
+  const typed = document.getElementById('typed');
+  let ri = 0, ci = 0, deleting = false;
+  function type() {
+    const word = roles[ri];
+    typed.textContent = word.slice(0, ci);
+    if (!deleting) {
+      if (ci < word.length) { ci++; setTimeout(type, 70); }
+      else { deleting = true; setTimeout(type, 1800); }
+    } else {
+      if (ci > 0) { ci--; setTimeout(type, 35); }
+      else { deleting = false; ri = (ri + 1) % roles.length; setTimeout(type, 350); }
+    }
+  }
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    typed.textContent = roles.join(' · ');
+  } else { type(); }
+
+  // Scroll reveal
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Animated counters
+  const counterIO = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      const el = e.target;
+      const target = +el.dataset.count, suffix = el.dataset.suffix || '';
+      const dur = 1200, start = performance.now();
+      function step(now) {
+        const p = Math.min((now - start) / dur, 1);
+        el.textContent = Math.round(target * (1 - Math.pow(1 - p, 3))) + suffix;
+        if (p < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+      counterIO.unobserve(el);
+    });
+  }, { threshold: 0.5 });
+  document.querySelectorAll('.stat .num').forEach(el => counterIO.observe(el));
+
+  // Back to top
+  const topBtn = document.getElementById('topBtn');
+  window.addEventListener('scroll', () => {
+    topBtn.classList.toggle('show', window.scrollY > 600);
+  }, { passive: true });
+  topBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+  // --- Chatbot demo (rule-based, runs fully in-page) ---
+  const chatLog = document.getElementById('chatLog');
+  const chatInput = document.getElementById('chatInput');
+  const chatSend = document.getElementById('chatSend');
+
+  const botRules = [
+    { keys: ['service', 'offer', 'what can you do', 'what do you do', 'help me with'], reply: "I offer 4 core services: CRM Setup & Optimization, AI Automation Builds, Virtual Executive Assistance, and AI Chatbot Deployment (like me!). Which one sounds like what you need?" },
+    { keys: ['price', 'pricing', 'charge', 'cost', 'rate', 'much', 'budget', 'fee'], reply: "One-time builds (CRM setup, automations, chatbots) are quoted per project. Ongoing support runs on a monthly retainer. Book a free discovery call and Mark will scope it with you — no commitment." },
+    { keys: ['tool', 'stack', 'software', 'tech', 'platform'], reply: "Mark works with GoHighLevel, HubSpot, Make.com, Zapier, n8n, Notion, Airtable, ClickUp, Claude API, ChatGPT, and more. If your tool isn't listed, ask — he probably automates it anyway." },
+    { keys: ['start', 'begin', 'book', 'schedule', 'hire', 'contact', 'reach', 'email'], reply: "Easy: hit 'Book a free discovery call' below, or email marklouielarin@gmail.com. You'll get a reply within 24 hours." },
+    { keys: ['time', 'zone', 'philippines', 'where', 'located', 'based', 'hours', 'available'], reply: "Mark is based in the Philippines (GMT+8) and works flexibly with US, AU, and EU clients — async updates, Loom videos, and clear documentation keep everyone in sync." },
+    { keys: ['experience', 'years', 'background', 'long have'], reply: "Mark has 3+ years of experience and 50+ automated workflows shipped — across real estate, coaching, and e-commerce businesses. Check the Results section above for real numbers." },
+    { keys: ['automat', 'workflow', 'zapier', 'make.com', 'n8n', 'integrat'], reply: "Automation is the specialty: lead follow-up, email sequences, task routing, invoicing, reporting — built in Make.com, Zapier, or n8n, tested and documented before handover." },
+    { keys: ['chatbot', 'chat bot', 'bot like', 'this bot'], reply: "I'm a live example! Mark builds AI chatbots trained on your business — FAQs, lead capture, CRM integration. Imagine me answering YOUR customers 24/7." },
+    { keys: ['crm', 'gohighlevel', 'highlevel', 'hubspot', 'zoho', 'pipeline', 'lead'], reply: "CRM is Mark's home turf — pipeline builds, lead scoring, automated follow-up sequences, and integrations. One client's lead response time went from 4+ hours to 90 seconds." },
+    { keys: ['thank', 'thanks', 'awesome', 'great', 'cool', 'nice'], reply: "Anytime! 😊 If you're curious what a bot like me could do for your business, Mark's one click away — 'Book a free discovery call' below." },
+    { keys: ['hi', 'hello', 'hey', 'yo', 'good morning', 'good afternoon'], reply: "Hey there! 👋 I'm Mark's AI assistant. Ask me about his services, pricing, tools, or how to get started." },
+    { keys: ['ai'], reply: "Mark deploys AI where it saves real hours: chatbots for support and lead capture, AI steps inside automation flows, and Claude/ChatGPT-powered drafting and triage. Ask about a specific use case!" },
+  ];
+  const botFallbacks = [
+    "Good question! I'm a demo, so for specifics, book a free discovery call or email marklouielarin@gmail.com — Mark replies within 24 hours.",
+    "That one's above my pay grade (I work for free 🤖). Mark can answer it though — hit 'Book a free discovery call' below.",
+    "I'll be honest — I don't have that answer yet. A custom-trained version of me would! Email marklouielarin@gmail.com and ask Mark directly.",
+  ];
+  let fallbackIdx = 0, userMsgCount = 0, nudged = false;
+
+  function addMsg(text, who) {
+    const d = document.createElement('div');
+    d.className = 'msg ' + who;
+    d.textContent = text;
+    chatLog.appendChild(d);
+    chatLog.scrollTop = chatLog.scrollHeight;
+    return d;
+  }
+
+  // Match whole words for short keys so "hi" doesn't fire on "which", "ai" on "email", etc.
+  function matches(text, key) {
+    if (key.length > 4 || key.includes(' ')) return text.includes(key);
+    return new RegExp('\\b' + key + '\\b').test(text);
+  }
+
+  function botReply(q) {
+    const t = addMsg('typing…', 'bot typing');
+    setTimeout(() => {
+      const lower = q.toLowerCase();
+      const rule = botRules.find(r => r.keys.some(k => matches(lower, k)));
+      t.remove();
+      if (rule) addMsg(rule.reply, 'bot');
+      else { addMsg(botFallbacks[fallbackIdx % botFallbacks.length], 'bot'); fallbackIdx++; }
+      // One-time nudge after a few questions
+      if (userMsgCount >= 3 && !nudged) {
+        nudged = true;
+        setTimeout(() => addMsg("By the way — everything I just did (instant answers, 24/7, on-brand) is what Mark builds for clients. Want one for your business? Book a free call below. 👇", 'bot'), 1200);
+      }
+    }, 700);
+  }
+
+  function sendChat(q) {
+    q = (q || chatInput.value).trim();
+    if (!q) return;
+    addMsg(q, 'user');
+    userMsgCount++;
+    chatInput.value = '';
+    botReply(q);
+  }
+
+  chatSend.addEventListener('click', () => sendChat());
+  chatInput.addEventListener('keydown', e => { if (e.key === 'Enter') sendChat(); });
+  document.querySelectorAll('.chip-btn').forEach(b =>
+    b.addEventListener('click', () => sendChat(b.dataset.q))
+  );
+
+  // Greet when demo scrolls into view
+  const chatIO = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        botReply('hello');
+        chatIO.disconnect();
+      }
+    });
+  }, { threshold: 0.4 });
+  chatIO.observe(document.getElementById('demo'));
+
+  // Copy email
+  document.getElementById('copyEmail').addEventListener('click', function () {
+    navigator.clipboard.writeText('marklouielarin@gmail.com').then(() => {
+      this.textContent = 'copied!';
+      setTimeout(() => this.textContent = 'copy', 1500);
+    });
+  });
+</script>
+
+</body>
+</html>
