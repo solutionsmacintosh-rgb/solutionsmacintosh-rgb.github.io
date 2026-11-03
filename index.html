@@ -354,6 +354,9 @@
   .featured-body { padding: 1.75rem; }
   .featured-body h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: 0.5rem; }
   .featured-body > p { font-size: 14px; color: var(--muted); margin-bottom: 1.25rem; }
+  .shot-links { display:flex; flex-wrap:wrap; gap:0.5rem; margin-bottom:1.25rem; font-family: var(--mono); font-size: 11px; }
+  .shot-links a { color: var(--accent); border:1px solid var(--border); border-radius:100px; padding:3px 10px; text-decoration:none; }
+  .shot-links a:hover { border-color: rgba(0,220,180,0.5); }
   .feature-list {
     list-style: none;
     display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -863,6 +866,46 @@
     <div class="section-tag">// Proof</div>
     <h2 class="section-title">Recent results</h2>
     <div class="section-divider"></div>
+
+    <article class="featured">
+      <a class="featured-shot" href="ai-receptionist-workflow.webp" target="_blank" rel="noopener" aria-label="Open full-size AI Voice Receptionist workflow screenshot">
+        <picture>
+          <source srcset="ai-receptionist-workflow-1200.webp" type="image/webp"/>
+          <img src="ai-receptionist-workflow-1200.jpg" width="1200" height="334" loading="lazy" decoding="async"
+               alt="n8n Book Slot workflow: Vapi webhook, argument parsing, email check, time zone normalisation, slot re-check against Google Calendar, event creation with success and error paths, reply to Vapi, then Airtable logging"/>
+        </picture>
+        <span class="zoom">VIEW FULL WORKFLOW ↗</span>
+      </a>
+      <div class="featured-body">
+        <div class="case-tag">Featured build · n8n · Voice AI · Appointments</div>
+        <h3>AI Voice Receptionist that books, reschedules and cancels appointments</h3>
+        <p>A Vapi voice agent answers the call; n8n does the work behind it through four tools: check availability, book, reschedule and cancel. Each tool validates the caller's details, works in Google Calendar and Airtable, and replies to the agent in real time.</p>
+        <ul class="feature-list">
+          <li><strong>4 Vapi tool webhooks</strong>, each returning the exact <code>{ results: [ { toolCallId, result } ] }</code> reply Vapi expects</li>
+          <li><strong>Open-slot suggestions</strong>: 30-minute slots, Mon–Fri 9–6, for the next 7 days when the requested time is taken</li>
+          <li><strong>Double-booking protection</strong>: re-checks the slot right before creating the event</li>
+          <li><strong>Google Calendar events</strong> with Meet link and the caller as attendee</li>
+          <li><strong>Airtable booking log</strong>: rows created, moved and marked Cancelled automatically</li>
+          <li><strong>One time zone</strong> (America/Chicago) across every step, safe through daylight saving</li>
+          <li><strong>Friendly replies</strong> when details are missing, the slot is gone or no booking is found, so the agent never goes silent</li>
+          <li><strong>Documented and tested</strong>: sticky notes on every row; all paths tested end to end with mock Vapi calls</li>
+        </ul>
+        <div class="shot-links" aria-label="Workflow screenshots">
+          <a href="ai-receptionist-get-slots.webp" target="_blank" rel="noopener">Check availability ↗</a>
+          <a href="ai-receptionist-book-slot.webp" target="_blank" rel="noopener">Book ↗</a>
+          <a href="ai-receptionist-update-slot.webp" target="_blank" rel="noopener">Reschedule ↗</a>
+          <a href="ai-receptionist-cancel-slot.webp" target="_blank" rel="noopener">Cancel ↗</a>
+        </div>
+        <div class="skill-tags">
+          <span class="tag">n8n</span>
+          <span class="tag">Vapi</span>
+          <span class="tag">Voice AI</span>
+          <span class="tag">Google Calendar</span>
+          <span class="tag">Airtable</span>
+          <span class="tag">Webhooks</span>
+        </div>
+      </div>
+    </article>
 
     <article class="featured">
       <a class="featured-shot" href="fb-ai-agent-workflow.webp" target="_blank" rel="noopener" aria-label="Open full-size workflow screenshot">
