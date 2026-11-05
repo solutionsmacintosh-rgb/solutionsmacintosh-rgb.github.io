@@ -868,6 +868,39 @@
     <div class="section-divider"></div>
 
     <article class="featured">
+      <a class="featured-shot" href="shorts-reels-workflow.webp" target="_blank" rel="noopener" aria-label="Open full-size Automated YouTube Shorts and Facebook Reels Creator workflow screenshot">
+        <picture>
+          <source srcset="shorts-reels-workflow-1200.webp" type="image/webp">
+          <img src="shorts-reels-workflow-1200.jpg" width="1200" height="201" loading="lazy" decoding="async" alt="n8n Automated YouTube Shorts and Facebook Reels Creator workflow: schedule trigger, Airtable upload history, Groq prompt generation, JWT auth, Veo video generation with a polling loop, test-mode branch, YouTube and Facebook publishing, Airtable logging">
+        </picture>
+        <span class="zoom">VIEW FULL WORKFLOW ↗</span>
+      </a>
+      <div class="featured-body">
+        <div class="case-tag">Featured build · n8n · AI Video · Social Media</div>
+        <h3>Automated YouTube Shorts and Facebook Reels creator that never repeats itself</h3>
+        <p>A schedule fires, an LLM writes a fresh ASMR scene based on what has already been posted, Veo generates the video, and n8n publishes it to YouTube Shorts and a Facebook Page — then logs the upload to Airtable so the next run picks a different subject.</p>
+        <ul class="feature-list">
+          <li><strong>Repeat protection:</strong> reads the latest rows from Airtable and builds an “already used, avoid these” list that is fed straight into the prompt</li>
+          <li><strong>Structured prompt generation:</strong> Groq returns prompt, food item, video title and description through a Structured Output Parser, so every field is ready to use</li>
+          <li><strong>Service-account auth:</strong> signs a JWT and exchanges it for a Google access token on each run, with no manual token refresh</li>
+          <li><strong>Veo 3.1 video generation</strong> with a polling loop guarded by isDone, isFiltered and isErrored checks, so a blocked or failed render never silently breaks the run</li>
+          <li><strong>Dual publishing:</strong> the finished video is uploaded to YouTube Shorts and posted to a Facebook Page through the Graph API</li>
+          <li><strong>Test mode toggle:</strong> one boolean generates and inspects a video without publishing anything live</li>
+          <li><strong>Airtable upload log:</strong> title, description, food item, status, date, YouTube video ID and Facebook post ID written on every publish</li>
+          <li><strong>Documented end to end:</strong> sticky notes covering the flow, credentials, Airtable columns and how to run it safely</li>
+        </ul>
+        <div class="skill-tags">
+          <span class="tag">n8n</span>
+          <span class="tag">Groq</span>
+          <span class="tag">Veo 3.1</span>
+          <span class="tag">YouTube API</span>
+          <span class="tag">Facebook Graph API</span>
+          <span class="tag">Airtable</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="featured">
       <a class="featured-shot" href="ai-receptionist-workflow.webp" target="_blank" rel="noopener" aria-label="Open full-size AI Voice Receptionist workflow screenshot">
         <picture>
           <source srcset="ai-receptionist-workflow-1200.webp" type="image/webp"/>
